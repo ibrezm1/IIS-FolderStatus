@@ -1,0 +1,79 @@
+/* Custom styles for FolderDateApp */
+:root {
+    --primary-gradient: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+    --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    max-width: 720px;
+}
+
+.header-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    background-color: #e0e7ff;
+    color: #4338ca;
+}
+
+.monitor-card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.card-header-bar {
+    height: 6px;
+    background: var(--primary-gradient);
+}
+
+.folder-box {
+    background-color: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.95rem;
+    word-break: break-all;
+}
+
+.info-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #64748b;
+    margin-bottom: 0.25rem;
+}
+
+.status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+.copy-btn {
+    transition: all 0.2s ease-in-out;
+}
+
+.copy-btn:hover {
+    background-color: #e2e8f0;
+}
